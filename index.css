@@ -313,8 +313,13 @@ footer{
         border-radius: 10px;
         text-decoration: none;
     }
+    
+    #navbar ul li a:hover{
+       color: black;
+       background-color: aliceblue;
+    }
         #clients img{
-        width: 65px;
+        width: 55px;
         /* padding: px; */
         justify-content: center;
         align-items: center;
