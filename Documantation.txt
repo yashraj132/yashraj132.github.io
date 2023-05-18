@@ -1,0 +1,16 @@
+16 May 2023
+
+1. Challenges faced on setting margins and paddings in the center text and to make it more responsive at first.
+2. Getting confused in CSS classes sometimes and hence finding a solution it is fun.
+
+17 May 2023
+
+1. Faced challenges in making flex container. But at last was able to make it.
+2. It was easy to apply all the termenologies in section Our Services.
+
+18 May 2023
+
+1. While working on section class Client-section got confused between id(#) and classes(.).
+2. Took almost an half of hour to resolve this silly problem then after that was to solve it suddenly.
+3. Was struggling and getting confused in setting width in responsiveness.
+4. Managed to make it responsive easily with some logic. Done..!!

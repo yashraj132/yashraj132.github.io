@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Display', sans-serif;
+
+}
+
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* Logo Designing in Navbar */
+#logo{
+    padding: 5px 22px;
+}
+
+/* Navbar elements design */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content : "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    display: block;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+   color: black;
+   background-color: aliceblue;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 630px;
+    align-items: center;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#home::before{
+    content:"";
+    position: absolute;
+    background: url('bg.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: rgb(239, 198, 198);
+    text-align: center;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    /* padding-left: 170px; */
+}
+
+#home p{
+    color: rgb(239, 198, 198);
+    /* text-align: center; */
+    font-size: 1.2rem;
+    text-shadow: 1px 1px black;
+    /* padding-left: 170px; */
+}
+/* Utility classes */
+
+.h-primary{
+    font-size: 2rem;
+    padding: 12px;
+    
+}
+
+.h-secondary{
+    font-size: 1.5rem;    
+    padding: 12px;
+}
+
+#home button{
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn{
+    padding: 4px 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(150, 111, 59);
+    font-size: 16px;
+}
+
+.btn:hover{
+    background-color: rgb(240, 164, 66);
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Services Section */
+.center{
+    text-align: center;
+    font-family: 'Noto Sans Display', sans-serif;
+    /* padding-top: 85px; */
+}
+
+#services{
+    margin: 30px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 1%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(183, 209, 194);
+}
+
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+
+/* Clients Section */
+#client-section{
+    height: 240px;
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    background: url('bg2.jpg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+} 
+
+#clients img{
+    width: 150px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+    color: rgb(193, 193, 193);
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('bg3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 0.9rem;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.8rem;
+}
+/* Footer Section */
+
+footer{
+    background: black;
+    color: aliceblue;
+    font-size: 0.8rem;
+    padding: 9px 20px;
+}
+ 
+
+/* CSS for Mobile Phone */
+@media screen and (max-width : 1000px) {
+
+    *{
+        font-size: 0.8rem;
+    }
+    /* Navbar Section  */
+    #navbar{
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+    }
+
+    #navbar ul li a{
+        display: block;
+        font-size: 20px;
+        color: aliceblue;
+        padding: 3px 22px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    
+    #navbar ul li a:hover{
+       color: black;
+       background-color: aliceblue;
+    }
+    
+    /* Home Section */
+    .h-primary{
+        font-size: 1.5rem;
+        padding: 12px;
+        
+    }
+    
+    .h-secondary{
+        font-size: 1rem;    
+        padding: 12px;
+    }
+    
+
+
+    /* Services Section */
+    #services{
+        flex-direction: column;
+        margin: 20px 60px 20px 60px;
+        
+    }
+
+    #services .box{
+        margin-top: 20px;
+        border-radius: 30px;
+    }
+
+    /* Client Section */
+    #clients{
+        overflow: hidden;
+    }
+    
+    #client-section::before{
+        position: absolute;
+        /* width: 200%; */
+        overflow: hidden;
+    }
+    #clients img{
+        width: 80px;
+        /* padding: px; */
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* Contact Section */
+    #contact::before{
+        position: absolute;
+        /* width: 200%; */
+        overflow: hidden;
+    }
+
+
+    /* Footer Section */
+}
+
+
+@media screen and (max-width : 515px) {
+    #navbar ul li a{
+        font-size: 12px;
+        display: block;
+        color: aliceblue;
+        /* padding: 3px 22px; */
+        border-radius: 10px;
+        text-decoration: none;
+    }
+}
