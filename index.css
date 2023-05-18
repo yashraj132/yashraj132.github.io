@@ -319,8 +319,8 @@ footer{
        background-color: aliceblue;
     }
         #clients img{
-        width: 55px;
-        /* padding: px; */
+        width: 50px;
+            margin: 0px;
         justify-content: center;
         align-items: center;
     }
