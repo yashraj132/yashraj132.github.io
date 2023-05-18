@@ -285,7 +285,7 @@ footer{
         overflow: hidden;
     }
     #clients img{
-        width: 70px;
+        width: 80px;
         /* padding: px; */
         justify-content: center;
         align-items: center;
@@ -313,4 +313,11 @@ footer{
         border-radius: 10px;
         text-decoration: none;
     }
+        #clients img{
+        width: 65px;
+        /* padding: px; */
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
