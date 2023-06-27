@@ -134,6 +134,7 @@
     border: 2px solid rgb(0, 0, 0);
     margin: 1%;
     padding: 20px;
+    width: 30%;
     border-radius: 5px;
     background-color: rgb(183, 209, 194);
 }
@@ -211,6 +212,23 @@
     border-radius: 9px;
     font-size: 0.8rem;
 }
+
+.btn2{
+    padding: 4px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(150, 111, 59);
+    font-size: 13px;
+    border-radius: 5px;
+    margin-left: 43%;
+}
+
+.btn2:hover{
+    background-color: rgb(240, 164, 66);
+    color: black;
+    cursor: pointer;
+}
+
+
 /* Footer Section */
 
 footer{
@@ -271,7 +289,9 @@ footer{
 
     #services .box{
         margin-top: 20px;
+        /* margin-left: 5%; */
         border-radius: 30px;
+        width: 90%;
     }
 
     /* Client Section */
@@ -285,7 +305,7 @@ footer{
         overflow: hidden;
     }
     #clients img{
-        width: 70px;
+        width: 80px;
         /* padding: px; */
         justify-content: center;
         align-items: center;
@@ -299,30 +319,94 @@ footer{
         overflow: hidden;
     }
 
-
+    .btn2{
+        margin-left: 25%;
+    }
     /* Footer Section */
 }
 
 
 @media screen and (max-width : 515px) {
+    #navbar{
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+    }
+
+    #navbar ul{
+        padding: 0%;
+        margin: 0%;
+    }
     #navbar ul li a{
-        font-size: 12px;
+        font-size: 0.9rem;
         display: block;
         color: aliceblue;
-        /* padding: 3px 22px; */
-        border-radius: 10px;
+        padding: 3px 22px;
+        border-radius: px;
         text-decoration: none;
     }
-    
-    #navbar ul li a:hover{
-       color: black;
-       background-color: aliceblue;
-    }
-        #clients img{
-        width: 50px;
-            margin: 0px;
+    #clients img{
+        width: 70px;
+        /* padding: px; */
         justify-content: center;
         align-items: center;
     }
+    .btn, .btn2{
+        padding: 2px 7px;
+    }
+}
+
+@media screen and (max-width : 375px){
+
+    #home h1{
+        color: rgb(239, 198, 198);
+        text-align: center;
+        text-shadow: 2px 2px rgb(0, 0, 0);
+        /* padding-left: 170px; */
+    }
     
+    #home p{
+        color: rgb(239, 198, 198);
+        /* text-align: center; */
+        font-size: 0.8rem;
+        padding: 2px;
+        text-shadow: 1px 1px black;
+        /* padding-left: 170px; */
+    }
+
+    #clients img{
+        width: 50px;
+        /* padding: px; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    #services .box img{
+        height: 100px;
+        margin: auto;
+        display: block;
+    }
+
+    #navbar ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navbar ul li a{
+        font-size: 0.7rem;
+        display: block;
+        color: aliceblue;
+        padding: 3px 22px;
+        border-radius: px;
+        text-decoration: none;
+    }
+
+    .btn, .btn2{
+        font-size: 0.6rem;
+    }
+    .btn2{
+        margin-left: 40%;
+    }
 }
