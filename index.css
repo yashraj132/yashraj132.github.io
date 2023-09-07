@@ -108,6 +108,7 @@
     color: rgb(255, 255, 255);
     background-color: rgb(150, 111, 59);
     font-size: 16px;
+    border: 1px solid rgb(51, 47, 41);
 }
 
 .btn:hover{
@@ -144,10 +145,25 @@
     display: block;
 }
 
+.bn{
+    margin-left:36%;
+    margin-top: 3%;
+    padding: 5px 12px;
+    color: white;
+    background-color: rgb(150, 111, 59);
+    border-radius: 5px;
+    border: 1px solid rgb(51, 47, 41);
+}
+
+.bn:hover{
+    background-color: rgb(240, 164, 66);
+    color: black;
+    cursor: pointer;
+}
 
 /* Clients Section */
 #client-section{
-    height: 240px;
+    height: 30%;
     position: relative;
 }
 
@@ -165,12 +181,14 @@
     display: flex; 
     justify-content: center;
     align-items: center;
-    margin: 26px;
+    margin-left: 24%;
 } 
 
-#clients img{
-    width: 150px;
-    padding: 20px;
+#clients img{   
+    display: inline-block;
+
+    width: 20%;
+    padding: 1%;
     justify-content: center;
 }
 
@@ -217,7 +235,7 @@
     padding: 4px 20px;
     color: rgb(255, 255, 255);
     background-color: rgb(150, 111, 59);
-    font-size: 13px;
+    font-size: 1.2rem;
     border-radius: 5px;
     margin-left: 43%;
 }
@@ -297,6 +315,7 @@ footer{
     /* Client Section */
     #clients{
         overflow: hidden;
+
     }
     
     #client-section::before{
@@ -305,13 +324,15 @@ footer{
         overflow: hidden;
     }
     #clients img{
-        width: 80px;
+        width: 20%;
         /* padding: px; */
         justify-content: center;
         align-items: center;
     }
 
-
+    .bn{
+        margin-left: 42%;
+    }
     /* Contact Section */
     #contact::before{
         position: absolute;
@@ -346,13 +367,17 @@ footer{
         text-decoration: none;
     }
     #clients img{
-        width: 70px;
+        width: 20%;
         /* padding: px; */
         justify-content: center;
         align-items: center;
     }
     .btn, .btn2{
         padding: 2px 7px;
+    }
+    .bn{
+        margin-left: 35%;
+        margin-top: 4%;
     }
 }
 
@@ -375,10 +400,8 @@ footer{
     }
 
     #clients img{
-        width: 50px;
+        width: 20%;
         /* padding: px; */
-        justify-content: center;
-        align-items: center;
     }
 
     #services .box img{
@@ -402,11 +425,14 @@ footer{
         border-radius: px;
         text-decoration: none;
     }
-
+    
     .btn, .btn2{
         font-size: 0.6rem;
     }
     .btn2{
         margin-left: 40%;
+    }
+    .bn{
+        margin-left:30%;
     }
 }
